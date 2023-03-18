@@ -152,6 +152,7 @@ header {
     .banner-image {
         width: 100%;
         margin: 15px 0;
+        padding: 0 20px;
     }
 
 /* main quick section responsive start */
