@@ -1,3 +1,170 @@
-h1{
-    color: red;
+/* rote styel */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+/* common style start */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Work Sans', sans-serif;
 }
+.primary-button{
+    border: 0;
+    color: white;
+    font-weight: 700px;
+    border-radius: 4px;
+    background-color: #FF900E;
+    padding: 8px 10px;
+}
+
+/* common style start */
+
+/* heder section start */
+header {
+    background: rgba(255, 144, 14, 0.1);
+}
+
+/* nav-manu sections start */
+.navigation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+
+
+}
+
+.website-taitle h1 {
+    font-weight: 700px;
+}
+
+.manu-containers {
+    display: flex;
+    gap: 18px;
+}
+
+.manu-containers li {
+    list-style-type: none;
+
+}
+
+.manu-containers li:hover a {
+    color: #FF900E;
+}
+
+.manu-containers a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500px;
+}
+
+/* nav-manu sections end */
+
+/* new group sections start */
+.new-group-architects-section {
+    width: 862px;
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.new-group-title h1 {
+    font-weight: 700px;
+}
+
+.new-group-discription {
+    font-weight: 500px;
+}
+
+
+.banner-image {
+    width: 100%;
+    margin: 30px 0;
+}
+
+/* new group sections end */
+
+/* main - Quick section start */
+.main-container{
+    width: 862px;
+    
+    margin: 100px auto;
+}
+.quick-list-container {
+    display: flex;
+    gap: 30px; 
+}
+
+.quick-list-container>div{
+    flex: 1;
+}
+.images-album{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.images-album > img{
+    width: 100%;
+    border-radius: 5px;   
+}
+.section-informaitions-container{
+    display: flex;
+    align-items: center;
+    
+}
+.section-informaitions{
+    padding-left: 50px;
+}
+.quick-secition-title span:first-child{
+    color: #727272;
+}
+.quick-secition-title span:last-child{
+    color: #FF900E;
+}
+
+
+@media only screen and (max-width: 576px) {
+
+    /* manu section reponsive start */
+    .navigation-container {
+        flex-direction: column;
+    }
+
+    .manu-containers {
+        flex-direction: column;
+    }
+
+    /* manu section reponsive end */
+
+    /* new - group section responsive start */
+    .new-group-architects-section{
+        width: auto;
+        padding: 0 20px;
+        margin: 50px 0;
+    }
+
+    .new-group-architects-section p,
+    h1 {
+        text-align: justify;
+    }
+
+    .banner-image {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+/* main quick section responsive start */
+    .main-container{
+        width: auto;
+    }
+
+    .quick-list-container {
+        flex-direction: column;
+    }
+    .images-album{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .images-album > img{
+        width: 100%;
+        border-radius: 5px;   
+    }
+}
+/* main quick section responsive start */
