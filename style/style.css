@@ -135,6 +135,7 @@ header {
     display: flex;
     margin: 150px 0;
     gap: 20px;
+    position: relative;
 }
 .experiance-discribe-container, .images-container{
     flex: 1;
@@ -161,7 +162,7 @@ header {
     color: #727272;
 }
 .sub-container .sub-containers{
-    margin-top: 40px;
+    margin-top: 35px;
 }
 .sub-container{
     padding-left: 35px;
@@ -171,6 +172,18 @@ header {
 }
 .sub-container .sub-containers p{
     margin-top: 5px;
+}
+#paragraph{
+    padding-bottom: 20px;
+}
+
+#floting-button{
+    position: absolute;
+    width: 120px;
+    right: 0;
+    left:0;
+    bottom:0;
+    margin: auto;
 }
 
 @media only screen and (max-width: 576px) {
@@ -234,7 +247,9 @@ header {
         width: 100%;
         height: auto;
     }
-
+    #paragraph{
+        margin-bottom: 50px;
+    }
 
     /* experiance section responsive end */
 
