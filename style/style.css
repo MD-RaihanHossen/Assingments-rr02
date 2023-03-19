@@ -87,7 +87,6 @@ header {
 /* main - Quick section start */
 .main-container {
     width: 862px;
-
     margin: 100px auto;
 }
 
@@ -128,63 +127,121 @@ header {
 .quick-secition-title span:last-child {
     color: #FF900E;
 }
+
 /* main - Quick section end */
 
 /* experiance sections start */
-.many-years-experiance-container{
+.many-years-experiance-container {
     display: flex;
     margin: 150px 0;
     gap: 20px;
     position: relative;
 }
-.experiance-discribe-container, .images-container{
+
+.experiance-discribe-container,
+.images-container {
     flex: 1;
 }
-.experiance-title{
+
+.experiance-title {
     margin: 0;
 }
-.images-container img{
+
+.images-container img {
     width: 100%;
     height: 100%;
 }
-#experiance-title{
-    font-size:45px;
+
+#experiance-title {
+    font-size: 45px;
     border-left: 8px solid #FF900E;
     border-radius: 10px;
     padding-left: 15px;
 }
 
-.sub-containers h1:first-child{
+.sub-containers h1:first-child {
     font-size: 20px;
     color: #131313;
 }
-.sub-containers p:last-child{
+
+.sub-containers p:last-child {
     color: #727272;
 }
-.sub-container .sub-containers{
+
+.sub-container .sub-containers {
     margin-top: 35px;
 }
-.sub-container{
+
+.sub-container {
     padding-left: 35px;
 }
-.sub-container .sub-containers h1{
+
+.sub-container .sub-containers h1 {
     margin-bottom: 5px;
 }
-.sub-container .sub-containers p{
+
+.sub-container .sub-containers p {
     margin-top: 5px;
 }
-#paragraph{
+
+#paragraph {
     padding-bottom: 20px;
 }
 
-#floting-button{
+#floting-button {
     position: absolute;
     width: 120px;
     right: 0;
-    left:0;
-    bottom:0;
+    left: 0;
+    bottom: 0;
     margin: auto;
 }
+
+/* experiance sections end */
+
+/* some facts section start */
+.some-facts-sub-container {
+    width: 400px;
+    margin-bottom: 50px;
+}
+
+.achipments-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.facts-discripsions{
+    color:#727272;
+    padding-right: 40px;
+}
+.facts-title, .fact-discripsions, img{
+    padding: 0;
+    margin: 5px 0;
+    
+}
+.facts-title{
+    text-align: center;
+}
+
+.images-center{
+    display: flex;
+    justify-content: center;
+}
+
+.sub-achipmenst-container {
+    Width :  200px ;
+    height : 200px ;
+    border: 1px solid 
+    #FF900E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* some facts section end*/
 
 @media only screen and (max-width: 576px) {
 
@@ -214,7 +271,7 @@ header {
     .banner-image {
         width: 100%;
         margin: 15px 0;
-        
+
     }
 
     /* main quick section responsive start */
@@ -236,22 +293,43 @@ header {
         width: 100%;
         border-radius: 5px;
     }
+
     /* experiance section responsive satrt */
-    .many-years-experiance-container{
-        flex-direction:column;
+    .many-years-experiance-container {
+        flex-direction: column;
         flex-direction: column-reverse;
         padding: 0 20px;
 
     }
-    .images-container img{
+
+    .images-container img {
         width: 100%;
         height: auto;
     }
-    #paragraph{
+
+    #paragraph {
         margin-bottom: 50px;
     }
-
     /* experiance section responsive end */
+
+    /* some facts section start */
+    .achipments-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20;
+        width: 100%;
+        
+        
+    }
+    .sub-achipmenst-container {
+        width: auto;
+        height: auto;
+        padding:0 20px ;
+       
+    }
+    #facts-container{
+        padding: 20px;
+    }
 
 }
 
