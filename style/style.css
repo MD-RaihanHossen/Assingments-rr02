@@ -128,7 +128,50 @@ header {
 .quick-secition-title span:last-child {
     color: #FF900E;
 }
+/* main - Quick section end */
 
+/* experiance sections start */
+.many-years-experiance-container{
+    display: flex;
+    margin: 150px 0;
+    gap: 20px;
+}
+.experiance-discribe-container, .images-container{
+    flex: 1;
+}
+.experiance-title{
+    margin: 0;
+}
+.images-container img{
+    width: 100%;
+    height: 100%;
+}
+#experiance-title{
+    font-size:45px;
+    border-left: 8px solid #FF900E;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+.sub-containers h1:first-child{
+    font-size: 20px;
+    color: #131313;
+}
+.sub-containers p:last-child{
+    color: #727272;
+}
+.sub-container .sub-containers{
+    margin-top: 40px;
+}
+.sub-container{
+    padding-left: 35px;
+}
+.sub-container .sub-containers h1{
+    margin-bottom: 5px;
+}
+.sub-container .sub-containers p{
+    margin-top: 5px;
+}
 
 @media only screen and (max-width: 576px) {
 
@@ -172,13 +215,28 @@ header {
 
     .images-album {
         grid-template-columns: repeat(1, 1fr);
-        padding: 0 10px 0 5px;
+        padding: 0 20px;
+        /* padding: 0 10px 0 5px; */
     }
 
     .images-album img {
         width: 100%;
         border-radius: 5px;
     }
+    /* experiance section responsive satrt */
+    .many-years-experiance-container{
+        flex-direction:column;
+        flex-direction: column-reverse;
+        padding: 0 20px;
+
+    }
+    .images-container img{
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* experiance section responsive end */
 
 }
 
