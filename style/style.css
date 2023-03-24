@@ -262,14 +262,15 @@ img {
 
 /* Our Sponspors section container end */
 /* logo container style start */
-.log-container{
+.log-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 30px;
     margin-top: 100px;
 
 }
-.fotter-sub-container{
+
+.fotter-sub-container {
     width: 620px;
     height: 80px;
     background-color: #FFF4E7;
@@ -280,6 +281,7 @@ img {
     border-radius: 8px;
     margin-bottom: 100px;
 }
+
 /* logo container style end */
 @media only screen and (max-width: 576px) {
 
@@ -368,25 +370,31 @@ img {
 
     }
 
-    #facts-container {
-        padding: 20px;
+    #facts-container .some-facts-sub-container{
+        width: auto;
+        height: auto;
+        padding: 0 20px;
     }
+    
 
     /* Our Sponspors section responsive start */
-    .Our-Sponspors-sub-container {
+    .Our-Sponspors-sub-container{
         width: auto;
         padding: 0 20px;
         text-align: center;
     }
-    .Our-Sponspors-sub-container h1{
+
+    .Our-Sponspors-sub-container h1 {
         text-align: center;
     }
+
     /* Our Sponspors section responsive end */
-    .log-container{
+    .log-container {
         grid-template-columns: 1fr;
         justify-items: center;
     }
-    .fotter-sub-container{
+
+    .fotter-sub-container {
         width: 90%;
         text-align: center;
         padding: 5px 10px;
